@@ -1,0 +1,65 @@
+,,,,,,,,,,
+,ID,Severity,Environment,Title,Steps,Expected Result,Actual Result,Link,License,"Role (unregistered, unauthorized, authorized, All)"
+TRUE,268,Major,"Win 11 Opera 97, Chrome 111
+(Realme 50X Pro 5G, Android 12)
+Linux Deepin 20.8 GNU,Chrome ","QR code link to site_name.com app has no segment “&af_dp=https://site_name.com/instrument?id=” so it redirects to the Android system’s App market that has no site_name.com app available in menu section [Products and services],  Menu title [Mobile apps] and Menu item [CFD trading].
+","Precondition: Application site_name.com is not installed
+
+1. Navigate to site_name.com
+2. Hover over menu section [Products and services]
+3. Click menu item [CFD trading] 
+5. Scan QR code 
+6. Click title [Mobile apps]
+7. Scroll to the Block ""CFD trading app""/""New to CFD trading?*"" 
+8. Scan QR code",The app’s page “site_name.com” on the App Store/Google Play is opened,The app’s page “site_name.com” on the App Store/Google Play is not opened,"link
+
+
+
+
+",All,All
+FALSE,369,Minor,Win 11 Chrome 114,"Columns are shifted to the right, first column is out of the table, rounded numbers are displayed in Menu section [Markets] when clicking on Market categories dropdown.","1. Navigate to site_name.com
+2. Hover over Menu section [Markets]
+3. Click Market categories dropdown Most traded/Top risers/Top fallers /Most volatile","The table is changed according to the selected market category, all the columns are on the same place","The table is changed according to the selected market category, all the columns are shifted to the right, the first column is out of table, rounded numbers are displayed.",link ,All,All
+FALSE,370,Minor,"Win 11 Chrome 114
+Win 10 Chrome 114","Counter shows 20 million, after 1 second it shows 97 million in Menu item [Partnership Programme] after refreshing the page","1. Navigate to site_name.com 
+2. Hover over Menu section [About] 
+3. Click Menu item [Partnership Programme]
+4. Pay attention to the counter under the header “Be a part of our success”
+","Counter shows 97 million, after refreshing the page. ","After refreshing the page, counter shows 20 million, then after 1 second it shows 97 million
+
+",link,"CYSEC
+ASIC",All
+FALSE,371,Trivial,"Win 11 Chrome 114
+Samsung A52, Android 13, Chrome114 
+Win 11 Chrome 111
+Win 10,10 Pro, Chrome 114",Text block has no margin on Menu section [More] Menu item [Complaints],"1. Navigate to site_name.com 
+2. Hover over Menu section [About] 
+3. Click Menu item [Complaints]",Text block has margin,Text block has no margin,link,All,All
+FALSE,376,Trivial,Win 11 Chrome 114,Arrow overlaps numbers on Sticky bar in Menu section [News and analysis] Menu items [Stocks] [Commodities] [Indices] [Cryptocurrencies] [Forex] [Economics] when clicking on “Table of Content” when the number is more than 7 symbols long. In all languages ex CN.,"Preconditions: Devtools is opened
+1. Navigate to site_name.com 
+2. Hover over Menu section [News and analysis] 
+3. Click Menu items [Stocks] [Commodities] [Indices] [Cryptocurrencies] [Forex] [Economics]
+4. Click any article (for ex. https://site_name.com/gbp-to-eur-forecast)
+5. Make screen size less than 1198px
+6. Click Sticky bar “Table of Content”
+",Arrow doesn't overlap numbers on Sticky bar ,Arrow overlaps numbers on Sticky bar,link,All,All
+TRUE,363l,Critical,"Win 11 Chrome 112
+Win 10 Chrome 114
+MacOs Ventura 13.3.1, Safari 16.4, 
+Chrome 112
+MacOs Ventura 13.2.1, Safari 16.3
+Win 10 Firefox 114",Search result is not displayed after inputting words into search field and pressing Button [Enter] ,"1. Navigate to site_name.com
+2. Click on Button [Search]
+3. Input any word into the search field (for ex ""Forex"" )
+4. Press ""Enter""",Search result is displayed,Search result is not displayed,Link,All,All
+TRUE,165m,Major,"Realme X50 Pro 5G Andr 12 Chrome 114 
+MacOS Monterey 12.6.6 Safari 16.5
+","Button [Try now] redirects to the top of the page in menu section [Products and services] menu item [Discover Pro Trading] [Corporate Accounts] 
+","1. Navigate to site_name.com 
+2. Tap button [Burger menu]
+3. Expend menu section [Products and services] 
+4. Tap menu item [Discover Pro Trading] [Corporate Accounts]
+5. Tap button [Try now]
+","Sign Up form is opened
+
+",Button [Try now] redirects to the top of the page,link,ASIC,All
